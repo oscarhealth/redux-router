@@ -1,8 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router';
 
-@connect(state => ({ routerState: state.router }))
 export const App = class App extends Component {
   static propTypes = {
     children: PropTypes.node
